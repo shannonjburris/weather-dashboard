@@ -1,7 +1,25 @@
-;root {
+:root {
     --blue: #80B8F0;
     --darkblue: #3B5670;
 }
+
+#search-button {
+    background-color: var(--darkblue);
+    border: var(--blue);
+}
+
 .col {
     background-color: var(--darkblue);
+    color: whitesmoke;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin: 20px;
+    align-content: center;
+    line-height: 40px;
 }
+
+#today-temp {
+    line-height: 40px;
+}
+
+

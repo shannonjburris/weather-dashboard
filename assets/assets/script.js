@@ -8,6 +8,8 @@ function searchValue(event) {
     console.log(searchValue);
     getCurrentWeather(searchValue);
     document.getElementById("current-city").innerHTML = searchValue;
+    var todayDate = moment().format('L');
+    document.getElementById("current-date").innerHTML = todayDate;
 }
 
 
@@ -35,6 +37,9 @@ function getCurrentWeather(searchValue) {
                     var humidity = data.current.humidity;
                     var uvi = data.current.uvi;
                     //icon??
+                    var dateOne = document.getElementById("date-one");
+                    dateOne = moment().add(1, 'days').format("MM-DD-YYYY");
+                    document.getElementById("date-one").innerHTML = dateOne;
                     document.getElementById("temp").innerHTML = temp;
                     document.getElementById("wind").innerHTML = wind;
                     document.getElementById("humidity").innerHTML = humidity;
@@ -44,8 +49,10 @@ function getCurrentWeather(searchValue) {
                     var temp = data.daily[0].temp.day;
                     var wind = data.daily[0].wind_speed;
                     var humidity = data.daily[0].humidity;
+                    var dateTwo = document.getElementById("date-two");
 
-
+                    dateTwo = moment().add(2, 'days').format("MM-DD-YYYY");
+                    document.getElementById("date-two").innerHTML = dateTwo;
                     document.getElementById("temp-one").innerHTML = temp;
                     document.getElementById("wind-one").innerHTML = wind;
                     document.getElementById("humidity-one").innerHTML = humidity;
@@ -54,8 +61,10 @@ function getCurrentWeather(searchValue) {
                     var temp = data.daily[1].temp.day;
                     var wind = data.daily[1].wind_speed;
                     var humidity = data.daily[1].humidity;
+                    var dateThree = document.getElementById("date-three");
 
-
+                    dateThree = moment().add(3, 'days').format("MM-DD-YYYY");
+                    document.getElementById("date-three").innerHTML = dateThree;
                     document.getElementById("temp-two").innerHTML = temp;
                     document.getElementById("wind-two").innerHTML = wind;
                     document.getElementById("humidity-two").innerHTML = humidity;
@@ -74,8 +83,10 @@ function getCurrentWeather(searchValue) {
                     var temp = data.daily[3].temp.day;
                     var wind = data.daily[3].wind_speed;
                     var humidity = data.daily[3].humidity;
+                    var dateFour = document.getElementById("date-four");
 
-
+                    dateFour = moment().add(4, 'days').format("MM-DD-YYYY");
+                    document.getElementById("date-four").innerHTML = dateFour;
                     document.getElementById("temp-four").innerHTML = temp;
                     document.getElementById("wind-four").innerHTML = wind;
                     document.getElementById("humidity-four").innerHTML = humidity;
@@ -84,27 +95,36 @@ function getCurrentWeather(searchValue) {
                     var temp = data.daily[4].temp.day;
                     var wind = data.daily[4].wind_speed;
                     var humidity = data.daily[4].humidity;
+                    var dateFive = document.getElementById("date-five");
 
-
+                    dateFive = moment().add(5, 'days').format("MM-DD-YYYY");
+                    document.getElementById("date-five").innerHTML = dateFive;
                     document.getElementById("temp-five").innerHTML = temp;
                     document.getElementById("wind-five").innerHTML = wind;
                     document.getElementById("humidity-five").innerHTML = humidity;
 
-var inputArray = [];
+                
+                    
 
-inputArray.push(searchValue);
 
-console.log(searchValue);
-function myFunction() {
-var btn = document.createElement("button");
-btn.innerhtml = searchValue;
-document.body.appendChild(btn);
 
-console.log(inputArray);}
+
+
+                    var inputArray = [];
+
+                    inputArray.push(searchValue);
+                    console.log(searchValue);
+                    
+                    
+                    //var container = document.getElementById("cities-list")
+                    //btn.innerhtml = searchValue;
+                    //document.container.appendChild(btn);
+
+                    //console.log(inputArray);}
 
                 })
         })
-}
+    }
 
 
 

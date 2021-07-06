@@ -22,23 +22,25 @@
     <main class="flex-row justify-space-between">
         <div class="row">
             <div class="col-3">
-                <div class="card">
+                <div class="card" id="cities-list">
                     <h3 class="card-header">Search for a City</h3>
                     <form id="user-form" class="card-body">
                         <label class="form-label" for="City">City Name</label>
                         <input name="city" id="search-value" type="text" autofocus="true" class="form-input" />
                         <button type="submit" class="btn btn-primary" id="search-button">Search</button>
                     </form>
-                    <div id="btn"></div>
+                    <button type="text" class="btn btn-light" id="cities-list"></button>
+                    <ul id='list'></ul>
                 </div>
-            
+
             </div>
             <div class="col-9">
-                <div class="row">
+                <div class="row" id="today-temp">
                     <div class="col-12 col-md-8 col-xl-9">
-                        <h3 id="current-city"></h3>
+                        <h3 id="current-city" id="current-date"></h3>
+                        <a id="current-date"></a>
                         <p>
-            
+                        
                             Temp: <span id="temp"></span> ° F
                             <br>
                             Wind: <span id="wind"></span> MPH
@@ -51,67 +53,77 @@
                     </div>
                 </div>
                 <div class="row">
+                    <h4>Five Day Forecast:</h4>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col"> <p>
-            
-                                Temp: <span id="temp-one"></span> ° F
-                                <br>
-                                Wind: <span id="wind-one"></span> MPH
-                                <br>
-                                Humidity: <span id="humidity-one"></span> %
-                                <br>
-                               
-    
-                            </p></div>
                             <div class="col">
                                 <p>
-            
+                                    <span id="date-one"></span>
+                                    <br>
+                                    Temp: <span id="temp-one"></span> ° F
+                                    <br>
+                                    Wind: <span id="wind-one"></span> MPH
+                                    <br>
+                                    Humidity: <span id="humidity-one"></span> %
+                                    <br>
+
+
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <span id="date-two"></span>
+                                    <br>
                                     Temp: <span id="temp-two"></span> ° F
                                     <br>
                                     Wind: <span id="wind-two"></span> MPH
                                     <br>
                                     Humidity: <span id="humidity-two"></span> %
                                     <br>
-                                  
-        
+
+
                                 </p>
                             </div>
                             <div class="col">
                                 <p>
-            
+                                    <span id="date-three"></span>
+                                    <br>
                                     Temp: <span id="temp-three"></span> ° F
                                     <br>
                                     Wind: <span id="wind-three"></span> MPH
                                     <br>
                                     Humidity: <span id="humidity-three"></span> %
                                     <br>
-                                   
-        
+
+
                                 </p>
                             </div>
-                            <div class="col"> <p>
-            
-                                Temp: <span id="temp-four"></span> ° F
-                                <br>
-                                Wind: <span id="wind-four"></span> MPH
-                                <br>
-                                Humidity: <span id="humidity-four"></span> %
-                                <br>
-                               
-    
-                            </p></div>
                             <div class="col">
                                 <p>
-            
+                                    <span id="date-four"></span>
+                                    <br>
+                                    Temp: <span id="temp-four"></span> ° F
+                                    <br>
+                                    Wind: <span id="wind-four"></span> MPH
+                                    <br>
+                                    Humidity: <span id="humidity-four"></span> %
+                                    <br>
+
+
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <span id="date-five"></span>
+                                    <br>
                                     Temp: <span id="temp-five"></span> ° F
                                     <br>
                                     Wind: <span id="wind-five"></span> MPH
                                     <br>
                                     Humidity: <span id="humidity-five"></span> %
                                     <br>
-                                   
-        
+
+
                                 </p>
                             </div>
                         </div>
@@ -119,9 +131,9 @@
                 </div>
             </div>
         </div>
-</main>
-
-            <script src="assets/assets/script.js"></script>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="assets/assets/script.js"></script>
 </body>
 
 </html>
