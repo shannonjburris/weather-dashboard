@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/assets/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-light mb-5 p-3">
+        <div class="d-flex align-items-center">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <!-- search area -->
+    <main class="flex-row justify-space-between">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <h3 class="card-header">Search for a City</h3>
+                    <form id="user-form" class="card-body">
+                        <label class="form-label" for="City">City Name</label>
+                        <input name="city" id="search-value" type="text" autofocus="true" class="form-input" />
+                        <button type="submit" class="btn btn-primary" id="search-button">Search</button>
+                    </form>
+                    <div id="btn"></div>
+                </div>
+            
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-xl-9">
+                        <h3 id="current-city"></h3>
+                        <p>
+            
+                            Temp: <span id="temp"></span> ° F
+                            <br>
+                            Wind: <span id="wind"></span> MPH
+                            <br>
+                            Humidity: <span id="humidity"></span> %
+                            <br>
+                            UV Index: <span id="uv-index"></span>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col"> <p>
+            
+                                Temp: <span id="temp-one"></span> ° F
+                                <br>
+                                Wind: <span id="wind-one"></span> MPH
+                                <br>
+                                Humidity: <span id="humidity-one"></span> %
+                                <br>
+                               
+    
+                            </p></div>
+                            <div class="col">
+                                <p>
+            
+                                    Temp: <span id="temp-two"></span> ° F
+                                    <br>
+                                    Wind: <span id="wind-two"></span> MPH
+                                    <br>
+                                    Humidity: <span id="humidity-two"></span> %
+                                    <br>
+                                  
+        
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+            
+                                    Temp: <span id="temp-three"></span> ° F
+                                    <br>
+                                    Wind: <span id="wind-three"></span> MPH
+                                    <br>
+                                    Humidity: <span id="humidity-three"></span> %
+                                    <br>
+                                   
+        
+                                </p>
+                            </div>
+                            <div class="col"> <p>
+            
+                                Temp: <span id="temp-four"></span> ° F
+                                <br>
+                                Wind: <span id="wind-four"></span> MPH
+                                <br>
+                                Humidity: <span id="humidity-four"></span> %
+                                <br>
+                               
+    
+                            </p></div>
+                            <div class="col">
+                                <p>
+            
+                                    Temp: <span id="temp-five"></span> ° F
+                                    <br>
+                                    Wind: <span id="wind-five"></span> MPH
+                                    <br>
+                                    Humidity: <span id="humidity-five"></span> %
+                                    <br>
+                                   
+        
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+            <script src="assets/assets/script.js"></script>
+</body>
+
+</html>

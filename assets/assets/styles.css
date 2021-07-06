@@ -1,0 +1,7 @@
+;root {
+    --blue: #80B8F0;
+    --darkblue: #3B5670;
+}
+.col {
+    background-color: var(--darkblue);
+}
