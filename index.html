@@ -22,25 +22,25 @@
     <main class="flex-row justify-space-between">
         <div class="row">
             <div class="col-3">
-                <div class="card" id="cities-list">
+                <div class="card">
                     <h3 class="card-header">Search for a City</h3>
                     <form id="user-form" class="card-body">
                         <label class="form-label" for="City">City Name</label>
                         <input name="city" id="search-value" type="text" autofocus="true" class="form-input" />
                         <button type="submit" class="btn btn-primary" id="search-button">Search</button>
                     </form>
-                    <button type="text" class="btn btn-light" id="cities-list"></button>
-                    <ul id='list'></ul>
+                    <div id="cities-list"></div>
                 </div>
 
             </div>
             <div class="col-9">
                 <div class="row" id="today-temp">
                     <div class="col-12 col-md-8 col-xl-9">
-                        <h3 id="current-city" id="current-date"></h3>
-                        <a id="current-date"></a>
+                        <h3 id="current-city"></h3>
+                        <h5 id="current-date"></h5>
+                        <img id="current-weather-icon">
                         <p>
-                        
+                            
                             Temp: <span id="temp"></span> ° F
                             <br>
                             Wind: <span id="wind"></span> MPH
@@ -60,6 +60,8 @@
                                 <p>
                                     <span id="date-one"></span>
                                     <br>
+                                    <img id="icon-day-one">
+                                    <br>
                                     Temp: <span id="temp-one"></span> ° F
                                     <br>
                                     Wind: <span id="wind-one"></span> MPH
@@ -73,6 +75,8 @@
                             <div class="col">
                                 <p>
                                     <span id="date-two"></span>
+                                    <br>
+                                    <img id="icon-day-two">
                                     <br>
                                     Temp: <span id="temp-two"></span> ° F
                                     <br>
@@ -88,6 +92,8 @@
                                 <p>
                                     <span id="date-three"></span>
                                     <br>
+                                    <img id="icon-day-three">
+                                    <br>
                                     Temp: <span id="temp-three"></span> ° F
                                     <br>
                                     Wind: <span id="wind-three"></span> MPH
@@ -102,6 +108,8 @@
                                 <p>
                                     <span id="date-four"></span>
                                     <br>
+                                    <img id="icon-day-four">
+                                    <br>
                                     Temp: <span id="temp-four"></span> ° F
                                     <br>
                                     Wind: <span id="wind-four"></span> MPH
@@ -115,6 +123,8 @@
                             <div class="col">
                                 <p>
                                     <span id="date-five"></span>
+                                    <br>
+                                    <img id="icon-day-five">
                                     <br>
                                     Temp: <span id="temp-five"></span> ° F
                                     <br>
